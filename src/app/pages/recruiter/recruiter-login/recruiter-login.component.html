@@ -1,0 +1,34 @@
+<app-header></app-header>
+<div class="homeBanner">
+  <app-navbar></app-navbar>
+</div>
+<div class="data-container">
+  <div class="loginBody">
+    <div class="typeLogin">
+      <span class="active">RECRUITER</span><span>LOG IN</span>
+    </div>
+    <form>
+      <div class="form-row">
+        <div class="form-group col-12">
+          <label for="inputEmail4">User name</label>
+          <input type="email" class="form-control" id="inputEmail4" placeholder="User name">
+        </div>
+        <div class="form-group col-12">
+          <label for="inputPassword4">Password</label>
+          <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+          <label class="forget">Forget Password ?</label>
+        </div>
+        <div class="form-group col-12">
+          <div class="form-check float-left">
+            <input class="form-check-input" type="checkbox" id="gridCheck1">
+            <label class="form-check-label" for="gridCheck1">
+              Remember Me
+            </label>
+          </div>
+          <button type="button" (click)="signIn()" class="btn lightBlueButton float-right">SIGN IN</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+<app-footer></app-footer>

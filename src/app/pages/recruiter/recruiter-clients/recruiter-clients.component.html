@@ -1,0 +1,557 @@
+
+
+
+
+<div class="assignmentData">
+  <div class="searchArea" *ngIf=" clientItem">
+    <div class="searchItem float-left" >
+      <div class="searchBox">
+        <i class="fa fa-search"></i>
+        <input class="form-control searchInput" type="search" placeholder="Search Assignment"/>
+      </div>
+      <button class="btn lightBlueButton">SEARCH</button>
+      <button class="btn white-btn">ADD NEW</button>
+    </div>
+    <div class="buttonArea float-right">
+      <button class="btn darkBlue-btn">
+        <i class="fa fa-refresh" aria-hidden="true"></i> REFRESH
+      </button>
+      <button class="btn white-btn">
+        <i class="fa fa-download" aria-hidden="true"></i> EXPORT
+      </button>
+    </div>
+  </div>
+  <div class="searchArea" *ngIf="!clientItem">
+    <div class='client-detail'>
+      <div class="detail-box">
+        <div class="row">
+          <div class='col-md-2 '>
+            <div class='img-box'></div>
+            <div class="pt-2">
+            <a href='#'><i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+          <a href='#'><i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+          </div>
+          </div>
+          <div class='col-md-10'>
+            <h5>COMPANY NAME</h5>
+            <form class="row">
+              <div class='col-md-6 col-sm-12'>
+                <div class="form-group row">
+                  <label  class="col-sm-3 p-0 col-form-label">Business Tel:</label>
+                  <div class="col-sm-8 p-0">
+                    <input type="text"    class="form-control"  value="+27 82 000 0000">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label  class="col-sm-3 p-0 col-form-label">Accounts Tel:</label>
+                  <div class="col-sm-8 p-0">
+                    <input type="text"    class="form-control"  value="+27 82 000 0000">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label class="col-sm-3 p-0 col-form-label">Email</label>
+                  <div class="col-sm-8 p-0">
+                    <input type="email" class="form-control"  value="email@example.com">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label  class="col-sm-3 p-0 col-form-label">Website:</label>
+                  <div class="col-sm-8 p-0">
+                    <input type="text"    class="form-control"  value="www.companyname.co.za">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label  class="col-sm-3 p-0 col-form-label">Location:</label>
+                  <div class="col-sm-8 p-0">
+                    <input type="text"    class="form-control"  value="3 Dock Rd, Waterway House">
+                  </div>
+                </div>
+
+              </div>
+              <div class='col-md-6'>
+                <div class="form-group row">
+                  <label class="col-sm-3 p-0 col-form-label">Permanent Fee:</label>
+                  <div class="col-sm-8 p-0">
+                    <input type="text" readonly class="form-control"  value="20%">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label class="col-sm-3 p-0 col-form-label">Contract Fee:</label>
+                  <div class="col-sm-8 p-0">
+                    <input type="text" class="form-control"  value="30%">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label class="col-sm-3 p-0 col-form-label">Contract Fee:</label>
+                  <div class="col-sm-8 p-0">
+                  <textarea class="form-control" id="exampleFormControlTextarea1"></textarea>
+                </div>
+                </div>
+              </div>
+            </form>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!--<table class="assignmentTable" *ngIf="  clientItem">
+    <thead>
+      <tr>
+        <th>ASSIGNMENT NAME</th>
+        <th>COMPANY</th>
+        <th>DATE CREATED</th>
+        <th>FORECAST DATE</th>
+        <th>FORECAST VALUE</th>
+        <th>CREATED BY</th>
+        <th>STATUS</th>
+      </tr>
+    </thead>
+  </table>
+  <div class="fixedTale" *ngIf=" clientItem">
+    <table>
+      <tbody>
+        <tr (click)=" clientItem = false">
+          <td>Assignment</td>
+          <td>Company Name</td>
+          <td>01/06/2020</td>
+          <td>01/06/2020</td>
+          <td>R 00 000</td>
+          <td>Name Surname</td>
+          <td>Active</td>
+        </tr>
+        <tr>
+          <td>Assignment</td>
+          <td>Company Name</td>
+          <td>01/06/2020</td>
+          <td>01/06/2020</td>
+          <td>R 00 000</td>
+          <td>Name Surname</td>
+          <td>Active</td>
+        </tr>
+        <tr>
+          <td>Assignment</td>
+          <td>Company Name</td>
+          <td>01/06/2020</td>
+          <td>01/06/2020</td>
+          <td>R 00 000</td>
+          <td>Name Surname</td>
+          <td>Active</td>
+        </tr>
+        <tr>
+          <td>Assignment</td>
+          <td>Company Name</td>
+          <td>01/06/2020</td>
+          <td>01/06/2020</td>
+          <td>R 00 000</td>
+          <td>Name Surname</td>
+          <td>Active</td>
+        </tr>
+        <tr>
+          <td>Assignment</td>
+          <td>Company Name</td>
+          <td>01/06/2020</td>
+          <td>01/06/2020</td>
+          <td>R 00 000</td>
+          <td>Name Surname</td>
+          <td>Active</td>
+        </tr>
+        <tr>
+          <td>Assignment</td>
+          <td>Company Name</td>
+          <td>01/06/2020</td>
+          <td>01/06/2020</td>
+          <td>R 00 000</td>
+          <td>Name Surname</td>
+          <td>Active</td>
+        </tr>
+        <tr>
+          <td>Assignment</td>
+          <td>Company Name</td>
+          <td>01/06/2020</td>
+          <td>01/06/2020</td>
+          <td>R 00 000</td>
+          <td>Name Surname</td>
+          <td>Active</td>
+        </tr>
+        <tr>
+          <td>Assignment</td>
+          <td>Company Name</td>
+          <td>01/06/2020</td>
+          <td>01/06/2020</td>
+          <td>R 00 000</td>
+          <td>Name Surname</td>
+          <td>Active</td>
+        </tr>
+        <tr>
+          <td>Assignment</td>
+          <td>Company Name</td>
+          <td>01/06/2020</td>
+          <td>01/06/2020</td>
+          <td>R 00 000</td>
+          <td>Name Surname</td>
+          <td>Active</td>
+        </tr>
+        <tr>
+          <td>Assignment</td>
+          <td>Company Name</td>
+          <td>01/06/2020</td>
+          <td>01/06/2020</td>
+          <td>R 00 000</td>
+          <td>Name Surname</td>
+          <td>Active</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>-->
+  <table class="table-scroll small-first-col"  *ngIf=" clientItem">
+    <thead class="thead">
+
+        <tr >
+          <th *ngFor="let col of cols">
+            {{ col.header }}
+          </th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let rowData of dumy" (click)="clientItem = false" class="table-row">
+       <td>
+          <img />
+        </td>
+        <td>{{ rowData.fullName }}</td>
+        <td>{{ rowData.contactNo }}</td>
+        <td>{{ rowData.address }}</td>
+        <td>{{ rowData.active }}</td>
+        <td>{{ rowData.totalPlacement }}</td>
+        <td>{{ rowData.lastPlacement }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="sub-tab" *ngIf="!clientItem">
+
+      <div class="col-xs-12 ">
+        <nav>
+          <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+            <a class="nav-item nav-link " id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" >CONTACTS</a>
+            <a class="nav-item nav-link " id="nav-assignment-tab" data-toggle="tab" href="#nav-assignment" role="tab" >ASSIGNMENTS</a>
+            <a class="nav-item nav-link" id="nav-analytics-tab" data-toggle="tab" href="#nav-analytics" role="tab" >ANALYTICS</a>
+            <a class="nav-item nav-link active" id="nav-document-tab" data-toggle="tab" href="#nav-document" role="tab" >DOCUMENTS</a>
+          </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade candidates" id="nav-contact" role="tabpanel">
+
+            <table class="table-candidate small-first-col"  >
+              <thead class="thead">
+
+                  <tr >
+                    <th *ngFor="let col of cols1">
+                      {{ col.header }}
+                    </th>
+
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let rowData of dumy" (click)="clientItem = false" class="table-row">
+                 <td>
+                    <input
+                      type="checkbox"
+                    />
+                  </td>
+                  <td>{{ rowData.fullName }}</td>
+                  <td>{{ rowData.contactNo }}</td>
+                  <td>{{ rowData.address }}</td>
+                  <td>{{ rowData.active }}</td>
+                  <td>{{ rowData.totalPlacement }}</td>
+                  <td>{{ rowData.lastPlacement }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="tab-pane fade" id="nav-assignment" role="tabpanel">
+            <div class="float-right mr-4 mb-2"><button class="white-btn">Add New</button></div>
+            <table class="table-candidate assignment  small-first-col"  >
+              <thead class="thead">
+
+                  <tr >
+                    <th *ngFor="let col of cols2">
+                      {{ col.header }}
+                    </th>
+
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let rowData of assignmentData" (click)="clientItem = false" class="table-row">
+
+                  <td>{{ rowData.fullName }}</td>
+                  <td>{{ rowData.contactNo }}</td>
+                  <td>{{ rowData.address }}</td>
+                  <td>{{ rowData.active }}</td>
+                  <td>{{ rowData.totalPlacement }}</td>
+                  <td>{{ rowData.lastPlacement }}</td>
+                  <td>{{ rowData.lastPlacement }}</td>
+                  <td>{{ rowData.lastPlacement }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="tab-pane fade" id="nav-analytics" role="tabpanel">
+            <div class="row m-0">
+              <div class="col-md-6 cpl-sm-12 pl-0">
+                <div class="cv-box mb-3 ">
+                  <div class="blue-header">CONSULTANT CV’S SENT</div>
+                  <table class="cv-table">
+                    <thead>
+                      <tr>
+                        <th>Consultant</th>
+                        <th>CV’s Sent</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>name</td>
+                        <td>1</td>
+                      </tr>
+                      <tr>
+                        <td>name</td>
+                        <td>2</td>
+                      </tr>
+                      <tr>
+                        <td>name</td>
+                        <td>1</td>
+                      </tr>
+                      <tr>
+                        <td>name</td>
+                        <td>1</td>
+                      </tr>
+                      <tr>
+                        <td>name</td>
+                        <td>1</td>
+                      </tr>
+                    </tbody>
+                    <tfoot>
+                      <tr>
+                        <td>Total</td>
+                        <td>7</td>
+                      </tr>
+                    </tfoot>
+                  </table>
+                </div>
+                <div class="cv-box mb-3">
+                  <div class="blue-header">CONSULTANT CV’S SEND</div>
+                  <table class="cv-table">
+                    <thead>
+                      <tr>
+                        <th>Consultant</th>
+                        <th>CV’s Sent</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>name</td>
+                        <td>1</td>
+                      </tr>
+                      <tr>
+                        <td>name</td>
+                        <td>2</td>
+                      </tr>
+                      <tr>
+                        <td>name</td>
+                        <td>1</td>
+                      </tr>
+                      <tr>
+                        <td>name</td>
+                        <td>1</td>
+                      </tr>
+                      <tr>
+                        <td>name</td>
+                        <td>1</td>
+                      </tr>
+                    </tbody>
+                    <tfoot>
+                      <tr>
+                        <td>Total</td>
+                        <td>7</td>
+                      </tr>
+                    </tfoot>
+                  </table>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12 pl-0">
+                <div class="cv-box mb-3">
+                  <div class="blue-header">CONSULTANT PLACEMENTS ON TARGET</div>
+                  <table class="cv-table">
+                    <thead>
+                      <tr>
+                        <th>Consultant</th>
+                        <th>CV’s Sent</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>name</td>
+                        <td>1</td>
+                      </tr>
+                      <tr>
+                        <td>name</td>
+                        <td>2</td>
+                      </tr>
+                      <tr>
+                        <td>name</td>
+                        <td>1</td>
+                      </tr>
+                      <tr>
+                        <td>name</td>
+                        <td>1</td>
+                      </tr>
+                      <tr>
+                        <td>name</td>
+                        <td>1</td>
+                      </tr>
+                    </tbody>
+                    <tfoot>
+                      <tr>
+                        <td>Total</td>
+                        <td>7</td>
+                      </tr>
+                    </tfoot>
+                  </table>
+                </div>
+                <div class="cv-box mb-3">
+                  <div class="blue-header">CONSULTANT PLACEMENTS INVOICE</div>
+                  <table class="cv-table">
+                    <thead>
+                      <tr>
+                        <th>Consultant</th>
+                        <th>CV’s Sent</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>name</td>
+                        <td>1</td>
+                      </tr>
+                      <tr>
+                        <td>name</td>
+                        <td>2</td>
+                      </tr>
+                      <tr>
+                        <td>name</td>
+                        <td>1</td>
+                      </tr>
+                      <tr>
+                        <td>name</td>
+                        <td>1</td>
+                      </tr>
+                      <tr>
+                        <td>name</td>
+                        <td>1</td>
+                      </tr>
+                    </tbody>
+                    <tfoot>
+                      <tr>
+                        <td>Total</td>
+                        <td>7</td>
+                      </tr>
+                    </tfoot>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade show active" id="nav-document" role="tabpanel">
+            <table class="simpleTable">
+              <thead>
+                <tr>
+                  <th>Document</th>
+                  <th>Date</th>
+                  <th>User</th>
+                </tr>
+              </thead>
+            </table>
+            <div class="subScrollTable">
+              <table>
+                <tbody>
+                  <tr>
+                    <td>Name_CV.docx</td>
+                    <td>21/10/2015 2:24:20pm</td>
+                    <td>Jean-Pierre Roos</td>
+                  </tr>
+                  <tr>
+                    <td>Name_CV.docx</td>
+                    <td>21/10/2015 2:24:20pm</td>
+                    <td>Jean-Pierre Roos</td>
+                  </tr>
+                  <tr>
+                    <td>Name_CV.docx</td>
+                    <td>21/10/2015 2:24:20pm</td>
+                    <td>Jean-Pierre Roos</td>
+                  </tr>
+                  <tr>
+                    <td>Name_CV.docx</td>
+                    <td>21/10/2015 2:24:20pm</td>
+                    <td>Jean-Pierre Roos</td>
+                  </tr>
+                  <tr>
+                    <td>Name_CV.docx</td>
+                    <td>21/10/2015 2:24:20pm</td>
+                    <td>Jean-Pierre Roos</td>
+                  </tr>
+                  <tr>
+                    <td>Name_CV.docx</td>
+                    <td>21/10/2015 2:24:20pm</td>
+                    <td>Jean-Pierre Roos</td>
+                  </tr>
+                  <tr>
+                    <td>Name_CV.docx</td>
+                    <td>21/10/2015 2:24:20pm</td>
+                    <td>Jean-Pierre Roos</td>
+                  </tr>
+                  <tr>
+                    <td>Name_CV.docx</td>
+                    <td>21/10/2015 2:24:20pm</td>
+                    <td>Jean-Pierre Roos</td>
+                  </tr>
+                  <tr>
+                    <td>Name_CV.docx</td>
+                    <td>21/10/2015 2:24:20pm</td>
+                    <td>Jean-Pierre Roos</td>
+                  </tr>
+                  <tr>
+                    <td>Name_CV.docx</td>
+                    <td>21/10/2015 2:24:20pm</td>
+                    <td>Jean-Pierre Roos</td>
+                  </tr>
+                  <tr>
+                    <td>Name_CV.docx</td>
+                    <td>21/10/2015 2:24:20pm</td>
+                    <td>Jean-Pierre Roos</td>
+                  </tr>
+                  <tr>
+                    <td>Name_CV.docx</td>
+                    <td>21/10/2015 2:24:20pm</td>
+                    <td>Jean-Pierre Roos</td>
+                  </tr>
+                  <tr>
+                    <td>Name_CV.docx</td>
+                    <td>21/10/2015 2:24:20pm</td>
+                    <td>Jean-Pierre Roos</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+  </div>
+</div>

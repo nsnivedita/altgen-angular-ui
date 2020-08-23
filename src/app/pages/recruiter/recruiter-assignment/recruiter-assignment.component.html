@@ -1,0 +1,415 @@
+<div class="assignmentData">
+  <div class="searchArea" *ngIf="assignItem">
+    <div class="searchItem float-left" >
+      <div class="searchBox">
+        <i class="fa fa-search"></i>
+        <input class="form-control searchInput" type="search" placeholder="Search Assignment"/>
+      </div>
+      <button class="btn lightBlueButton">SEARCH</button>
+      <button class="btn white-btn">ADD NEW</button>
+    </div>
+    <div class="buttonArea float-right">
+      <button class="btn darkBlue-btn">
+        <i class="fa fa-refresh" aria-hidden="true"></i> REFRESH
+      </button>
+      <button class="btn white-btn">
+        <i class="fa fa-download" aria-hidden="true"></i> EXPORT
+      </button>
+    </div>
+  </div>
+  <div class="searchArea" *ngIf="!assignItem">
+    <div class='client-detail'>
+      <div class="detail-box">
+        <div class="row">
+          <div class='col-md-2 '>
+            <div class='img-box'></div>
+            <div class="pt-2">
+            <a href='#'><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            <a href='#'><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          </div>
+          </div>
+          <div class='col-md-10'>
+            <div class="row">
+              <span class="assignmentName">ASSIGNMENT NAME</span>
+              <span class="companyName">COMPANY NAME</span>
+            </div>
+            <form class="row">
+              <div class='col-md-6 col-sm-12'>
+                <div class="form-group row">
+                  <label  class="col-sm-5 px-0 col-form-label">Fee Forecast:</label>
+                  <div class="col-sm-7 p-0">
+                    <input type="text"    class="form-control"  value="R 100 000.00">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label  class="col-sm-5 px-0 col-form-label">Forecasted Start Date:</label>
+                  <div class="col-sm-7 p-0">
+                    <input type="date"    class="form-control" >
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label class="col-sm-5 px-0 col-form-label">Assignment Status:</label>
+                  <div class="col-sm-7 p-0">
+                    <select class="form-control">
+                      <option>A</option>
+                      <option>B</option>
+                      <option>C</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label class="col-sm-5 px-0 col-form-label">Source:</label>
+                  <div class="col-sm-7 p-0">
+                    <select class="form-control">
+                      <option>A</option>
+                      <option>B</option>
+                      <option>C</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class='col-md-6'>
+                <div class="form-group row">
+                  <label class="col-sm-5 col-form-label">Salary in Currency:</label>
+                  <div class="col-sm-7 ">
+                    <select class="form-control">
+                      <option>A</option>
+                      <option>B</option>
+                      <option>C</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label class="col-sm-5  col-form-label">Invoice Notes:</label>
+                  <div class="col-sm-7 ">
+                  <textarea class="form-control" id="exampleFormControlTextarea1"></textarea>
+                </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <table class="assignmentTable" *ngIf="assignItem">
+    <thead>
+      <tr>
+        <th>ASSIGNMENT NAME</th>
+        <th>COMPANY</th>
+        <th>DATE CREATED</th>
+        <th>FORECAST DATE</th>
+        <th>FORECAST VALUE</th>
+        <th>CREATED BY</th>
+        <th>STATUS</th>
+      </tr>
+    </thead>
+  </table>
+  <div class="fixedTale" *ngIf="assignItem">
+    <table>
+      <tbody>
+        <tr (click)="assignItem = false">
+          <td>Assignment</td>
+          <td>Company Name</td>
+          <td>01/06/2020</td>
+          <td>01/06/2020</td>
+          <td>R 00 000</td>
+          <td>Name Surname</td>
+          <td>Active</td>
+        </tr>
+        <tr>
+          <td>Assignment</td>
+          <td>Company Name</td>
+          <td>01/06/2020</td>
+          <td>01/06/2020</td>
+          <td>R 00 000</td>
+          <td>Name Surname</td>
+          <td>Active</td>
+        </tr>
+        <tr>
+          <td>Assignment</td>
+          <td>Company Name</td>
+          <td>01/06/2020</td>
+          <td>01/06/2020</td>
+          <td>R 00 000</td>
+          <td>Name Surname</td>
+          <td>Active</td>
+        </tr>
+        <tr>
+          <td>Assignment</td>
+          <td>Company Name</td>
+          <td>01/06/2020</td>
+          <td>01/06/2020</td>
+          <td>R 00 000</td>
+          <td>Name Surname</td>
+          <td>Active</td>
+        </tr>
+        <tr>
+          <td>Assignment</td>
+          <td>Company Name</td>
+          <td>01/06/2020</td>
+          <td>01/06/2020</td>
+          <td>R 00 000</td>
+          <td>Name Surname</td>
+          <td>Active</td>
+        </tr>
+        <tr>
+          <td>Assignment</td>
+          <td>Company Name</td>
+          <td>01/06/2020</td>
+          <td>01/06/2020</td>
+          <td>R 00 000</td>
+          <td>Name Surname</td>
+          <td>Active</td>
+        </tr>
+        <tr>
+          <td>Assignment</td>
+          <td>Company Name</td>
+          <td>01/06/2020</td>
+          <td>01/06/2020</td>
+          <td>R 00 000</td>
+          <td>Name Surname</td>
+          <td>Active</td>
+        </tr>
+        <tr>
+          <td>Assignment</td>
+          <td>Company Name</td>
+          <td>01/06/2020</td>
+          <td>01/06/2020</td>
+          <td>R 00 000</td>
+          <td>Name Surname</td>
+          <td>Active</td>
+        </tr>
+        <tr>
+          <td>Assignment</td>
+          <td>Company Name</td>
+          <td>01/06/2020</td>
+          <td>01/06/2020</td>
+          <td>R 00 000</td>
+          <td>Name Surname</td>
+          <td>Active</td>
+        </tr>
+        <tr>
+          <td>Assignment</td>
+          <td>Company Name</td>
+          <td>01/06/2020</td>
+          <td>01/06/2020</td>
+          <td>R 00 000</td>
+          <td>Name Surname</td>
+          <td>Active</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="sub-tab" *ngIf="!assignItem">
+
+      <div class="col-xs-12 ">
+        <nav>
+          <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+            <a class="nav-item nav-link " id="nav-candidate-tab" data-toggle="tab" href="#nav-candidate" role="tab" >CANDIDATES</a>
+            <a class="nav-item nav-link" id="nav-analytics-tab" data-toggle="tab" href="#nav-analytics" role="tab" >ANALYTICS</a>
+            <a class="nav-item nav-link active" id="nav-document-tab" data-toggle="tab" href="#nav-document" role="tab" >DOCUMENTS</a>
+          </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade " id="nav-candidate" role="tabpanel">
+            <div class="float-right mr-4 mb-2"><button class="white-btn">Add New</button></div>
+            <table class="simpleTable">
+              <thead>
+                <tr>
+                  <th>Full Name</th>
+                  <th>Mobile</th>
+                  <th>Email</th>
+                  <th>Progress Status</th>
+                  <th>Progress Activity</th>
+                  <th>Created By</th>
+                </tr>
+              </thead>
+            </table>
+            <div class="subScrollTable">
+              <table>
+                <tbody>
+                  <tr>
+                    <td>Name Surname</td>
+                    <td>+27 82 123 4567</td>
+                    <td>name@company.com</td>
+                    <td>5. Client Interview</td>
+                    <td>01/06/2020</td>
+                    <td>Name Surname</td>
+                  </tr>
+                  <tr>
+                    <td>Name Surname</td>
+                    <td>+27 82 123 4567</td>
+                    <td>name@company.com</td>
+                    <td>5. Client Interview</td>
+                    <td>01/06/2020</td>
+                    <td>Name Surname</td>
+                  </tr>
+                  <tr>
+                    <td>Name Surname</td>
+                    <td>+27 82 123 4567</td>
+                    <td>name@company.com</td>
+                    <td>5. Client Interview</td>
+                    <td>01/06/2020</td>
+                    <td>Name Surname</td>
+                  </tr>
+                  <tr>
+                    <td>Name Surname</td>
+                    <td>+27 82 123 4567</td>
+                    <td>name@company.com</td>
+                    <td>5. Client Interview</td>
+                    <td>01/06/2020</td>
+                    <td>Name Surname</td>
+                  </tr>
+                  <tr>
+                    <td>Name Surname</td>
+                    <td>+27 82 123 4567</td>
+                    <td>name@company.com</td>
+                    <td>5. Client Interview</td>
+                    <td>01/06/2020</td>
+                    <td>Name Surname</td>
+                  </tr>
+                  <tr>
+                    <td>Name Surname</td>
+                    <td>+27 82 123 4567</td>
+                    <td>name@company.com</td>
+                    <td>5. Client Interview</td>
+                    <td>01/06/2020</td>
+                    <td>Name Surname</td>
+                  </tr>
+                  <tr>
+                    <td>Name Surname</td>
+                    <td>+27 82 123 4567</td>
+                    <td>name@company.com</td>
+                    <td>5. Client Interview</td>
+                    <td>01/06/2020</td>
+                    <td>Name Surname</td>
+                  </tr>
+                  <tr>
+                    <td>Name Surname</td>
+                    <td>+27 82 123 4567</td>
+                    <td>name@company.com</td>
+                    <td>5. Client Interview</td>
+                    <td>01/06/2020</td>
+                    <td>Name Surname</td>
+                  </tr>
+                  <tr>
+                    <td>Name Surname</td>
+                    <td>+27 82 123 4567</td>
+                    <td>name@company.com</td>
+                    <td>5. Client Interview</td>
+                    <td>01/06/2020</td>
+                    <td>Name Surname</td>
+                  </tr>
+                  <tr>
+                    <td>Name Surname</td>
+                    <td>+27 82 123 4567</td>
+                    <td>name@company.com</td>
+                    <td>5. Client Interview</td>
+                    <td>01/06/2020</td>
+                    <td>Name Surname</td>
+                  </tr>
+                  <tr>
+                    <td>Name Surname</td>
+                    <td>+27 82 123 4567</td>
+                    <td>name@company.com</td>
+                    <td>5. Client Interview</td>
+                    <td>01/06/2020</td>
+                    <td>Name Surname</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="nav-analytics" role="tabpanel">
+            Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.
+          </div>
+          <div class="tab-pane fade show active" id="nav-document" role="tabpanel">
+            <table class="simpleTable">
+              <thead>
+                <tr>
+                  <th>Document</th>
+                  <th>Date</th>
+                  <th>User</th>
+                </tr>
+              </thead>
+            </table>
+            <div class="subScrollTable">
+              <table>
+                <tbody>
+                  <tr>
+                    <td>Name_CV.docx</td>
+                    <td>21/10/2015 2:24:20pm</td>
+                    <td>Jean-Pierre Roos</td>
+                  </tr>
+                  <tr>
+                    <td>Name_CV.docx</td>
+                    <td>21/10/2015 2:24:20pm</td>
+                    <td>Jean-Pierre Roos</td>
+                  </tr>
+                  <tr>
+                    <td>Name_CV.docx</td>
+                    <td>21/10/2015 2:24:20pm</td>
+                    <td>Jean-Pierre Roos</td>
+                  </tr>
+                  <tr>
+                    <td>Name_CV.docx</td>
+                    <td>21/10/2015 2:24:20pm</td>
+                    <td>Jean-Pierre Roos</td>
+                  </tr>
+                  <tr>
+                    <td>Name_CV.docx</td>
+                    <td>21/10/2015 2:24:20pm</td>
+                    <td>Jean-Pierre Roos</td>
+                  </tr>
+                  <tr>
+                    <td>Name_CV.docx</td>
+                    <td>21/10/2015 2:24:20pm</td>
+                    <td>Jean-Pierre Roos</td>
+                  </tr>
+                  <tr>
+                    <td>Name_CV.docx</td>
+                    <td>21/10/2015 2:24:20pm</td>
+                    <td>Jean-Pierre Roos</td>
+                  </tr>
+                  <tr>
+                    <td>Name_CV.docx</td>
+                    <td>21/10/2015 2:24:20pm</td>
+                    <td>Jean-Pierre Roos</td>
+                  </tr>
+                  <tr>
+                    <td>Name_CV.docx</td>
+                    <td>21/10/2015 2:24:20pm</td>
+                    <td>Jean-Pierre Roos</td>
+                  </tr>
+                  <tr>
+                    <td>Name_CV.docx</td>
+                    <td>21/10/2015 2:24:20pm</td>
+                    <td>Jean-Pierre Roos</td>
+                  </tr>
+                  <tr>
+                    <td>Name_CV.docx</td>
+                    <td>21/10/2015 2:24:20pm</td>
+                    <td>Jean-Pierre Roos</td>
+                  </tr>
+                  <tr>
+                    <td>Name_CV.docx</td>
+                    <td>21/10/2015 2:24:20pm</td>
+                    <td>Jean-Pierre Roos</td>
+                  </tr>
+                  <tr>
+                    <td>Name_CV.docx</td>
+                    <td>21/10/2015 2:24:20pm</td>
+                    <td>Jean-Pierre Roos</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+  </div>
+</div>

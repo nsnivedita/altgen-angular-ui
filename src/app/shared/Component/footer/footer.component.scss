@@ -1,0 +1,105 @@
+@import "../../../../assets/scss/variables";
+footer {
+  //position: absolute;
+  //bottom: 0;
+  width: 100%;
+  float: left;
+  //padding: 2% 18% 5% 18%;
+  z-index: 1;
+  color: $footer_header;
+  letter-spacing: 0.5px;
+  background-color: $light-gray;
+  font-size: 14px;
+  .col-md-2,
+  .col-sm-12 {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+  }
+  .container{
+    width: 65%;
+    margin: auto;
+    padding: 5% 0;
+  }
+}
+
+.footer-title {
+  font-size: 13px ;
+  font-weight: bolder;
+}
+
+.footer-about {
+  padding-right: 30px;
+}
+.plr-1 {
+  padding: 0 5px;
+}
+
+.footer-menu li {
+  letter-spacing: 0.5px;
+  list-style: none;
+  text-align: left;
+
+  a {
+    text-decoration: none;
+    color: $footer_header;
+    font-size: 14px;
+  }
+}
+
+.font-small{
+  font-size: 9px;
+}
+.footer-social li
+{
+display: inline;
+padding-left: 8px;
+padding-right: 8px;
+font-size: 16px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .footer-widget{
+    display: none;
+
+  }
+  footer{
+    font-size: 16px;
+    padding-top: 10%;
+    .footer-title {
+      font-size: 18px;
+      font-weight: bolder;
+    }
+    li .text-right{
+      font-weight: 900;
+      margin-top: 0px;
+    }
+  }
+  .footer-widget-sm .footer-menu{
+    text-align: center !important;
+    li{
+      text-align: center !important;
+    }
+    .font-small{
+      font-size: 13px;
+    }
+    .footer-social{
+      padding-inline-start: unset !important;
+      li
+{
+  text-align: center !important;
+  margin: auto;
+  font-size: 17px;
+  padding-left: 15px;
+padding-right: 15px;
+}}
+  }
+
+}
+
+@media screen and (max-width: 992px) {
+  footer{
+    padding: 2% 10% 5% 10%;
+    letter-spacing: 0.2px;
+  }
+}

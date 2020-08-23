@@ -1,0 +1,19 @@
+<app-header></app-header>
+<div class="homeBanner">
+    <app-navbar></app-navbar>
+</div>
+<div class="main-body">
+  <div class="row">
+  <div class="col-xs-12 ">
+    <nav>
+      <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+        <a class="nav-item nav-link " [class.active]="item.label === activeItem" *ngFor="let item of items"  data-toggle="tab"  routerLink="{{item.routerLink}}" role="tab">{{item.label}}</a>
+      </div>
+    </nav>
+    <div class="tab-content" id="nav-tabContent">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+  </div>
+</div>
+<app-footer></app-footer>

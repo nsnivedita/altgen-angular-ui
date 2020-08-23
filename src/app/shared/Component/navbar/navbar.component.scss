@@ -1,0 +1,29 @@
+.mini-nav {
+  background: transparent;
+  border-bottom: 1px solid white;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    li {
+      display: inline-block;
+      text-transform: uppercase;
+      color: white;
+      margin-right: 30px;
+      font-size: 13px;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      &:last-child {
+        margin-right: 0px;
+      }
+      @media screen and (max-width: 402px) {
+        &:nth-child(3) {
+          margin-right: 0px;
+        }
+      }
+    }
+  }
+}

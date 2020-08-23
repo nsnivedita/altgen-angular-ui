@@ -1,0 +1,74 @@
+@import "../../../assets/scss/variables";
+.main-body {
+  margin: -4.5em auto 100px auto;
+  width: 65%;
+  background: $lightGray;
+  border-style: Solid;
+  border-color: $lightGray;
+  border-width: 0px;
+  @media screen and (max-width: 425px) {
+    margin-top: 0px;
+    width: 100%;
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 40px;
+  }
+}
+
+.tab-content{
+  background:$Grey;
+  padding: 0px;
+  float: left;
+  width: 100%;
+}
+
+.nav {
+  border:0px;
+  .nav-item{
+    border-radius: 0px;
+    border:0px;
+    color:#fff;
+    background: #1a75a9;
+    margin: 0px;
+    padding: 8px;
+    text-transform: uppercase;
+    &.active{
+      color:$dark-blue;
+      background: $Grey;
+    }
+    &:last-child{
+      background: #8dbdd8;
+      &.active{
+        background: $Grey;
+      }
+    }
+    &:nth-child(3){
+      background: #5aa3cd;
+      &.active{
+        background: $Grey;
+      }
+    }
+    &:nth-child(2){
+      background: #1d84bf;;
+      &.active{
+        background: $Grey;
+      }
+    }
+  }
+}
+
+.homeBanner {
+  background-image: url("../../../assets/images/Banner/recruiter.png");
+  background-size: cover;
+  height: 400px;
+  position: relative;
+  background-repeat: no-repeat;
+  margin-left: -2px;
+  z-index: -1;
+  background-position: center center;
+}
+@media screen and (max-width: 700px) {
+  .homeBanner {
+    margin-top: unset;
+  }
+}
