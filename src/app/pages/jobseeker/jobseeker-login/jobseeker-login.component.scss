@@ -1,0 +1,18 @@
+@import '../../../../assets/scss/variables';
+.homeBanner {
+  background-image: url("../../../../assets/images/Banner/anteena.png");
+  background-size: cover;
+  height: 400px;
+  position: relative;
+  background-repeat: no-repeat;
+  margin-left: -2px;
+  z-index: -1;
+  background-position: center center;
+}
+@media screen and (max-width: 700px) {
+  .homeBanner {
+    margin-top: unset;
+    // min-height: 100px;
+  }
+}
+
