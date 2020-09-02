@@ -5,13 +5,15 @@ import { JobseekerComponent } from './jobseeker.component';
 import { JobseekerLoginComponent } from './jobseeker-login/jobseeker-login.component';
 import { RouteRoutingModule } from '../recruiter/recruiter-routing.module';
 import { JobseekerRouting } from './jobseeker-routing.module';
+import { CarouselModule } from 'ngx-owl-carousel-o';
 
 @NgModule({
   imports: [
     CommonModule,
     SharedModule,
     //RouteRoutingModule,
-    JobseekerRouting
+    JobseekerRouting,
+    CarouselModule
   ],
   declarations: [JobseekerComponent, JobseekerLoginComponent]
 })

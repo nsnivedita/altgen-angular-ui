@@ -24,6 +24,17 @@
     color: #fff;
   }
 }
+.darkBlueButton {
+  background: $dark-blue;
+  color: #fff;
+  border-radius: 0px;
+  line-height: 1.7;
+  font-size: 12px;
+  min-width: 90px;
+  &:hover {
+    color: #fff;
+  }
+}
 
 .white-btn {
   height: calc(2em + 0.75rem + 2px);
