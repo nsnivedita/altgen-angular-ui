@@ -32,20 +32,32 @@
     }
 }
 
+.col-md-6{
+  padding-right: 0px;
+  padding-left: 0px;
+  
+}
 .signUp-Body{
   background-color: #1d84bf;
-  width: 50%;
+  height: 485px;
   padding: 1.5em 0em;
   position: relative;
   margin-right: 0em;
+  @media screen  and (max-width: 425px){
+    width: 100%;
+    padding: 2em 3em;
+  }
 }
 .login-Body{
   background-color: #fff;
   border: 1px solid #c1c3c5;
-  width: 50%;
+  height: 485px;
   padding: 2em 0em;
   position: relative;
-  
+  @media screen  and (max-width: 425px){
+    width: 100%;
+    padding: 2em 3em;
+  }
 }
 
 .typeLogin{
@@ -228,11 +240,11 @@ form{
     }
   }
 }
-.col-md-4{
+.col-sm-4{
   padding-right: 0px;
   padding-left: 0px;
   .castomWidth{
-    width: 97%;
+    width: 99%;
     .customHeader {
       background: $darkBlue;
       padding: 10px;

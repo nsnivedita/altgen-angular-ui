@@ -11,11 +11,13 @@ import { FakeService } from './fake-data/fake.service';
 import { HttpClient } from '@angular/common/http';
 import { HttpClientModule } from '@angular/common/http';
 import { SharedModule } from './shared/shared.module';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
+    NotFoundComponent,
   ],
   imports: [BrowserModule,SharedModule, AppRoutingModule, CarouselModule,BrowserAnimationsModule,RouterModule, HttpClientModule ],
   providers: [FakeService],
